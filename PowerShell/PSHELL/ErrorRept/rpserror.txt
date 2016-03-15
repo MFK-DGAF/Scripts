@@ -1,0 +1,29 @@
+icrosoft (R) SQL Server Execute Package Utility
+Version 11.0.2100.60 for 64-bit
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Started:  8:06:49 PM
+Error: 2015-12-08 20:25:57.73
+   Code: 0xC02020A1
+   Source: Load OutMain Outpt Main [494]
+   Description: Data conversion failed. The data conversion for column "PAYER1_EPIC_EXP_PYMT_AMT" returned status value 2 and status text "The value could not be converted because of a potential loss of data.".
+End Error
+Error: 2015-12-08 20:25:57.75
+   Code: 0xC0209029
+   Source: Load OutMain Outpt Main [494]
+   Description: SSIS Error Code DTS_E_INDUCEDTRANSFORMFAILUREONERROR.  The "Outpt Main.Outputs[Flat File Source Output].Columns[PAYER1_EPIC_EXP_PYMT_AMT]" failed because error code 0xC0209084 occurred, and the error row disposition on "Outpt Main.Outputs[Flat File Source Output].Columns[PAYER1_EPIC_EXP_PYMT_AMT]" specifies failure on error. An error occurred on the specified object of the specified component.  There may be error messages posted before this with more information about the failure.
+End Error
+Error: 2015-12-08 20:25:57.77
+   Code: 0xC0202092
+   Source: Load OutMain Outpt Main [494]
+   Description: An error occurred while processing file "E:\RunTimeDir\IncrementalClaimFiles\RPS\rha_outpt_mfile_RUMC_20151207_20151208.txt" on data row 59148.
+End Error
+Error: 2015-12-08 20:25:57.82
+   Code: 0xC0047038
+   Source: Load OutMain SSIS.Pipeline
+   Description: SSIS Error Code DTS_E_PRIMEOUTPUTFAILED.  The PrimeOutput method on Outpt Main returned error code 0xC0202092.  The component returned a failure code when the pipeline engine called PrimeOutput(). The meaning of the failure code is defined by the component, but the error is fatal and the pipeline stopped executing.  There may be error messages posted before this with more information about the failure.
+End Error
+DTExec: The package execution returned DTSER_FAILURE (1).
+Started:  8:06:49 PM
+Finished: 8:26:03 PM
+Elapsed:  1154.38 seconds

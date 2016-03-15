@@ -1,0 +1,1 @@
+imagex.exe /export G:ORIGINAL.wim 1 C:\TEMP\NEW.wim /compress maximum

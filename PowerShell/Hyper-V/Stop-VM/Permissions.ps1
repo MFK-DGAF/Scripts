@@ -1,0 +1,1 @@
+﻿start-process powershell -verb runas -argument C:\Windows\Panther\Scripts\Stop-VM\Stop-VM.ps1

@@ -1,0 +1,1 @@
+wmic product where "name like '%%AVG%%'" get Name, Version, IdentifyingNumber

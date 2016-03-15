@@ -1,0 +1,1 @@
+﻿start-process powershell -verb runas -argument C:\Windows\Panther\Scripts\Start-VM\Start-VM.ps1

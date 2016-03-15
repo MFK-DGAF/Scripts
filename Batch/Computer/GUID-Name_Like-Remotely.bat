@@ -1,0 +1,1 @@
+wmic /node:WG0501JE product where "name like '%%AVG%%'" get Name, Version, IdentifyingNumber

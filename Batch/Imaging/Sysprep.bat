@@ -1,0 +1,1 @@
+C:\Windows\System32\sysprep\sysprep.exe /oobe /generalize /shutdown /unattend:C:\Windows\Panther\unattend_x64.xml

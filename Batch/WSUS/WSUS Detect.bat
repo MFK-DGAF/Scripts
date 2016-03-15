@@ -1,0 +1,2 @@
+wuauclt /resetauthorization /detectnow
+pause

@@ -1,0 +1,10 @@
+VMIcvss
+vmictimesync
+vmishutdown
+vmicrdv
+vmickvpexchange
+vmicheartbeat
+vaultsvc
+TermService
+OSearch15
+AppFabricCachingService

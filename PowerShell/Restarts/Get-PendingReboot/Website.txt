@@ -1,0 +1,1 @@
+https://gallery.technet.microsoft.com/scriptcenter/Get-PendingReboot-Query-bdb79542

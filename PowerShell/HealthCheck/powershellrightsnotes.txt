@@ -1,0 +1,10 @@
+winrm set winrm/config/client '@{TrustedHosts="10.73.239.30"}'
+
+
+
+set-item WSMan:\localhost\Client\TrustedHosts -value rhadev03
+
+
+$securePassword = ConvertTo-SecureString "Password" -AsPlainText -force
+2	$credential = New-Object System.Management.Automation.PsCredential("domain\username",$securePassword)
+3	Invoke-Command -ComputerName RM-SERVER -ScriptBlock {Get-Process} -Credential $credential

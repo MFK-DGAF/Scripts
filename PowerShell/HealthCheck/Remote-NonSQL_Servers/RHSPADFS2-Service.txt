@@ -1,0 +1,4 @@
+adfssrv
+dns
+eventlog
+TermServLicensing

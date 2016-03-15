@@ -1,0 +1,2 @@
+C:\PSHELL\Function
+function]count]123 124

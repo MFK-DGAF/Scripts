@@ -1,0 +1,2 @@
+missing or more delimiter 330_20151214_DENIALS_DETAIL_20151214.TXT; line num:2
+missing or more delimiter 330_20151214_TRANSACTIONS_20151214.TXT; line num:2

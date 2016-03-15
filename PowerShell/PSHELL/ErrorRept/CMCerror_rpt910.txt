@@ -1,0 +1,8 @@
+invalid service date, RSHDWRCPT20151005_20151007.TXT,line_num=164521, value = 10/29/2015
+invalid service date, RSHDWRCPT20151005_20151007.TXT,line_num=167351, value = 10/30/2015
+invalid service date, RSHDWRCPT20151005_20151007.TXT,line_num=167352, value = 10/30/2015
+invalid service date, RSHDWCPT20151005_20151007.TXT,line_num=133024, value = 10/29/2015
+invalid service date, RSHDWCPT20151005_20151007.TXT,line_num=135446, value = 10/30/2015
+invalid service date, RSHDWCPT20151005_20151007.TXT,line_num=135447, value = 10/30/2015
+invalid admit date, RSHDWACT20151005_20151007.TXT,line_num=6848, value = 08/27/2017
+invalid admit date, RSHDWACT20151005_20151007.TXT,line_num=14558, value = 09/26/2016

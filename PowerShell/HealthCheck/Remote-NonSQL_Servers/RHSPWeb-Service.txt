@@ -1,0 +1,10 @@
+wuauserv
+vmicvss
+vmictimesync
+vmicshutdown
+vmicrdv
+vmickvpexchange
+vmicheartbeat
+w3svc
+gpsvc
+IISadmin

@@ -1,0 +1,1 @@
+﻿Stop-VM –Name LUIGI*
