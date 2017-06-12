@@ -1,0 +1,1 @@
+Get-WmiObject Win32_Product -ComputerName NAME| Format-Table IdentifyingNumber, Name

@@ -1,0 +1,1 @@
+$([ADSI]"WinNT://$env:COMPUTERNAME").Children | where {$_.SchemaClassName -eq 'user'} | select @{l='name';e={$_.name}},@{l='LastLogin';e={$_.lastlogin}} | export-csv C:\csv.csv
