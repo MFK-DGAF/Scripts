@@ -1,0 +1,24 @@
+BITS
+DcomLaunch
+Dnscache
+gpsvc
+Netlogon
+TermService
+RpcSs
+RpcEptMapper
+LanmanServer
+Schedule
+lmhosts
+ProfSvc
+tvnserver
+eventlog
+MpsSvc
+Winmgmt
+"Web DB Mirroring DNS Monitoring"
+WinRM
+wuauserv
+LanmanWorkstation
+BvSshServer
+MSSQLSERVER
+SQLSERVERAGENT
+SQLWriter
