@@ -1,0 +1,4 @@
+
+USE BCBCRec_Migration;
+DROP USER rmanager;
+GO

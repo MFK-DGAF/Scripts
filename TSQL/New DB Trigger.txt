@@ -1,0 +1,42 @@
+USE [master]
+GO
+
+/****** Object:  DdlTrigger [ddl_trig_database]    Script Date: 2/20/2017 12:31:44 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE TRIGGER [ddl_trig_database]
+ON ALL SERVER
+FOR CREATE_DATABASE
+AS
+declare @results varchar(max)
+declare @subjectText varchar(max)
+declare @databaseName VARCHAR(255)
+SET @subjectText = 'DATABASE Created on ' + @@SERVERNAME + ' by ' + SUSER_SNAME() 
+SET @results = 
+  (SELECT EVENTDATA().value('(/EVENT_INSTANCE/TSQLCommand/CommandText)[1]','nvarchar(max)'))
+SET @databaseName = (SELECT EVENTDATA().value('(/EVENT_INSTANCE/DatabaseName)[1]', 'VARCHAR(255)'))
+
+--Uncomment the below line if you want to not be alerted on certain DB names
+--IF @databaseName NOT LIKE '%Snapshot%'
+EXEC msdb.dbo.sp_send_dbmail
+ @profile_name = 'SQL-Alerts',
+ @recipients = 'Kevin_F_Tobola@rush.edu',
+ @body = @results,
+ @subject = @subjectText,
+ @exclude_query_output = 1 --Suppress 'Mail Queued' message
+
+GO
+
+SET ANSI_NULLS OFF
+GO
+
+SET QUOTED_IDENTIFIER OFF
+GO
+
+ENABLE TRIGGER [ddl_trig_database] ON ALL SERVER
+GO
