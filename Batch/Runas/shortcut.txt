@@ -1,0 +1,3 @@
+Target: C:\Windows\System32\runas.exe /netonly /user:rhadata\ktobola "C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\Ssms.exe"
+
+Start in: C:\Windows\system32
