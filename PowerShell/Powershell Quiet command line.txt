@@ -1,0 +1,1 @@
+powershell.exe -NoLogo -NonInteractive -ExecutionPolicy Bypass -File "Error Handling Wrapper.ps1"
