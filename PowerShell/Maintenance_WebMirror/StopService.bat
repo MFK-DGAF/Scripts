@@ -1,0 +1,1 @@
+net stop "Web DB Mirroring DNS Monitoring"
