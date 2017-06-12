@@ -1,0 +1,16 @@
+$nodes = $xml.SelectNodes("//*[@SID]")
+foreach ($node in $nodes) {
+    $sid = $node.attributes['SID'].value
+    $dispName = $node.attributes['DISPLAYNAME'].value
+    $obj = new-object psobject -prop @{SID=$sid;DISPNAME=$dispName}
+    $objs += $obj
+}
+
+
+[xml]$Accounts = Get-Content E:\automation\SFTPTest\accounts.xml
+
+foreach ($node in $Accounts.root.Configuration)
+{
+write-output $node.UserName
+write-output  $node.Password
+}
