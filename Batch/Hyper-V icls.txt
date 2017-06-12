@@ -1,0 +1,14 @@
+--SYMBOLIC LINK--
+
+mklink "%systemdrive%\programdata\Microsoft\Windows\Hyper-V\Virtual Machines\4A4F2389-A5FD-40E5-B9F2-B17A04D9BF37.xml" "C:\ClusterStorage\CSV3\MARIO\LUIGI_SPDB1\Virtual Machines\4A4F2389-A5FD-40E5-B9F2-B17A04D9BF37.xml"
+
+
+--SID SECURITY ACCESS--
+
+icacls "%systemdrive%\programdata\Microsoft\Windows\Hyper-V\Virtual Machines\C83B8C7-205B-4C26-A6D7F6D2429A.xml" /grant "NT VIRTUAL MACHINE \C83B8C7-205B-4C26-A6D7F6D2429A":(F) /L
+
+
+--SID SECURITY ACCESS TO ALL--
+
+icacls C:\ClusterStorage\CSV3\LUIGI\LUIGI_SPDB1\Virtual_Hard_Disks\LUIGI_SPDB1.vhdx /T /grant "NT VIRTUAL MACHINE\4A4F2389-A5FD-40E5-B9F2-B17A04D9BF37":(F)
+

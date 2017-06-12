@@ -1,0 +1,1 @@
+rd /s /q %SYSTEMDRIVE%\$Recycle.Bin
