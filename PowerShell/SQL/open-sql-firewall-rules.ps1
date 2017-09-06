@@ -14,3 +14,5 @@ New-NetFirewallRule -DisplayName “SSL” -Direction Inbound –Protocol TCP –LocalPo
 New-NetFirewallRule -DisplayName “SQL Server Browse Button Service” -Direction Inbound –Protocol UDP –LocalPort 1433 -Action allow
 #Enable Windows Firewall
 Set-NetFirewallProfile -DefaultInboundAction Block -DefaultOutboundAction Allow -NotifyOnListen True -AllowUnicastResponseToMulticast True
+#Enable SQL High Availability
+New-NetFirewallRule -DisplayName “SQL High Availability” -Direction Inbound –Protocol TCP –LocalPort 5022 -Action allow
