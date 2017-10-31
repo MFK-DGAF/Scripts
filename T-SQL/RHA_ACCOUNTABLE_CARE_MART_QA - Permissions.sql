@@ -2,14 +2,6 @@ USE [RHA_ACCOUNTABLE_CARE_MART_QA]
 GO
 DROP USER [RHADATA\edwteam]
 GO
-DROP USER [itseitli]
-GO
-DROP USER [mchester]
-GO
-DROP USER [mfavis1]
-GO
-DROP USER [tpatel8]
-GO
 DROP USER [RHADATA\nchevula]
 GO
 DROP USER [rmanager]
