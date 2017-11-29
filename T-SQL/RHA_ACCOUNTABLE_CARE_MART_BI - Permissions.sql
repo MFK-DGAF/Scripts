@@ -24,3 +24,9 @@ ALTER ROLE [db_owner] ADD MEMBER [RHADATA\yshi]
 GO
 DROP USER [tpatel8]
 GO
+CREATE USER [rmanager] FOR LOGIN [rmanager]
+GO
+ALTER ROLE [db_datareader] ADD MEMBER [rmanager]
+GO
+GRANT EXECUTE TO [rmanager]
+GO

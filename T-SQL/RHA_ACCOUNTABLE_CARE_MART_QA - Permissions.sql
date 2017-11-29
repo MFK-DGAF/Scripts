@@ -20,7 +20,9 @@ ALTER ROLE [db_owner] ADD MEMBER [mfavis1]
 GO
 CREATE USER [rmanager] FOR LOGIN [rmanager]
 GO
-ALTER ROLE [db_owner] ADD MEMBER [rmanager]
+ALTER ROLE [db_datareader] ADD MEMBER [rmanager]
+GO
+GRANT EXECUTE TO [rmanager]
 GO
 CREATE USER [tpatel8] FOR LOGIN [tpatel8]
 GO

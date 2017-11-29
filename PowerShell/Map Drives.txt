@@ -1,0 +1,23 @@
+################################################
+#This script requires PowerShell 3.0 or higher
+################################################
+
+################################################
+#Remove Existing Drives
+################################################
+
+If (Test-Path H, K)
+	{Remove-PSDrive H, K}
+
+################################################
+#Map New Drives
+################################################
+
+$Username = [Environment]::UserName
+$Firstletter = $Username.Substring(0,1)
+
+$Network1 = "\\rush.edu\User\$Firstletter\$UserName"
+New-PSDrive -Name H -PSProvider FileSystem -Root $Network1 -Persist -Description $Username -Scope Global
+
+$Network2 = "\\rush.edu\Data\Corp_Data\RHA\Provider"
+New-PSDrive -Name K -PSProvider FileSystem -Root $Network2 -Persist -Description Provider -Scope Global
