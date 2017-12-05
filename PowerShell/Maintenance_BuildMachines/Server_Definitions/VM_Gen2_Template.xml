@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<VMName>VM_Test1</VMName>
+	<ServerDir>True</ServerDir>
+	<Gen>2</Gen>
+	<Disk>
+		<Size>100GB</Size>
+		<Label>1</Label>
+		<ControllerNo>0</ControllerNo>
+		<Type>SCSI</Type>
+		<Dynamic>True</Dynamic>
+		<DiskGen>2</DiskGen>		
+	</Disk>
+	<Disk>
+		<Size>50GB</Size>
+		<Label>2</Label>
+		<ControllerNo>0</ControllerNo>
+		<Type>SCSI</Type>
+		<Dynamic>True</Dynamic>
+		<DiskGen>2</DiskGen>
+	</Disk>
+	<Disk>
+		<Size>50GB</Size>
+		<Label>3</Label>
+		<ControllerNo>0</ControllerNo>
+		<Type>SCSI</Type>
+		<Dynamic>True</Dynamic>
+		<DiskGen>2</DiskGen>
+	</Disk>
+	<CD>
+		<Source>E:\ISO\SW_DVD9_Windows_Svr_Std_and_DataCtr_2012_R2_64Bit_English_-4_MLF_X19-82891.iso</Source>
+	</CD>
+	<Ram>
+		<Start>16GB</Start>
+		<Min>1GB</Min>
+		<Max>32GB</Max>
+		<Dynamic>True</Dynamic>
+	</Ram>
+	<Boot>CD</Boot>
+	<Network>
+		<Type>External</Type>
+		<Name>WAN</Name>
+	</Network>
+	<Processor>
+		<Count>2</Count>
+	</Processor>
+</root>

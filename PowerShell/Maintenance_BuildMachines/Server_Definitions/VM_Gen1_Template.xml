@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<VMName>VM_Test2</VMName>
+	<ServerDir>True</ServerDir>
+	<Gen>1</Gen>
+	<Disk>
+		<Size>100GB</Size>
+		<Label>1</Label>
+		<ControllerNo>0</ControllerNo>
+		<Type>IDE</Type>
+		<Dynamic>True</Dynamic>
+		<DiskGen>2</DiskGen>		
+	</Disk>
+	<Disk>
+		<Size>50GB</Size>
+		<Label>2</Label>
+		<ControllerNo>0</ControllerNo>
+		<Type>SCSI</Type>
+		<Dynamic>True</Dynamic>
+		<DiskGen>2</DiskGen>
+	</Disk>
+	<Disk>
+		<Size>50GB</Size>
+		<Label>3</Label>
+		<ControllerNo>1</ControllerNo>
+		<Type>SCSI</Type>
+		<Dynamic>True</Dynamic>
+		<DiskGen>2</DiskGen>
+	</Disk>
+	<CD>
+		<Source>E:\ISO\Windows_Server_2008_R2_test2.iso</Source>
+	</CD>
+	<Ram>
+		<Start>16GB</Start>
+		<Min>1GB</Min>
+		<Max>32GB</Max>
+		<Dynamic>True</Dynamic>
+	</Ram>
+	<Boot>CD</Boot>
+	<Network>
+		<Type>External</Type>
+		<Name>WAN</Name>
+	</Network>
+	<Processor>
+		<Count>2</Count>
+	</Processor>
+</root>
