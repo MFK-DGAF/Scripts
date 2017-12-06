@@ -30,3 +30,7 @@ ALTER ROLE [db_datareader] ADD MEMBER [rmanager]
 GO
 GRANT EXECUTE TO [rmanager]
 GO
+CREATE USER [tmurphy4] FOR LOGIN [tmurphy4]
+GO
+ALTER ROLE [db_datareader] ADD MEMBER [tmurphy4]
+GO
