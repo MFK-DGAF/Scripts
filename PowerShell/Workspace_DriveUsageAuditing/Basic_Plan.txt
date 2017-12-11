@@ -1,0 +1,9 @@
+RAID Capacity testing
+
+1. Get list of Logical Drives
+
+2. Compare list of logical drives to physical drives/drive controllers. 
+
+3. Compare list of controllers to determine location/port
+
+4. Get max throughput of drive using 
