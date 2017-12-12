@@ -447,11 +447,13 @@ If ($appsonly) {
         If ($allapps) {
             RemAllApps
             ClearStartMenu
+			ControlPanel
             Goodbye
 
 }        Else {
             RemMostApps
             ClearStartMenu
+			ControlPanel
             Goodbye
 }
 
@@ -460,6 +462,7 @@ If ($appsonly) {
          DisService
          RegChange
          ClearStartMenu
+		 ControlPanel
          Goodbye
 
 }Else {
@@ -469,6 +472,7 @@ If ($appsonly) {
             DisService
             RegChange
             ClearStartMenu
+			ControlPanel
             Goodbye
 
 }        Else {
@@ -477,6 +481,7 @@ If ($appsonly) {
             DisService
             RegChange
             ClearStartMenu
+			ControlPanel
             Goodbye
 }
 }
