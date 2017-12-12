@@ -415,6 +415,18 @@ Function ClearStartMenu {
 }
 }
 
+#Add Control Panel back to WinX
+
+Function ControlPanel {
+	Write-Host "*******Adding Control Panel to WinX.*******"
+	$TargetFile = "$env:windir\System32\control.exe"
+	$ShortcutFile = "$env:LocalAppdata\Microsoft\Windows\WinX\Group 2\4 - Control Panel.lnk"
+	Remove-Item -Path $ShortcutFile
+	$WScriptShell = New-Object -ComObject WScript.Shell
+	$Shortcut = $WScriptShell.CreateShortcut($ShortcutFile)
+	$Shortcut.TargetPath = $TargetFile
+	$Shortcut.Save()
+	}
 
 #Goodbye Message Function
 
