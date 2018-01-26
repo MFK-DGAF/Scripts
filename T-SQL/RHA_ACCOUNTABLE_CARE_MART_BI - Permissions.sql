@@ -1,10 +1,10 @@
-USE [RHA_ACCOUNTABLE_CARE_MART_BI]
-GO
 DROP USER [jengland]
 GO
 DROP USER [mfavis1]
 GO
 DROP USER [nchevula]
+GO
+DROP USER [rmanager]
 GO
 DROP USER [RHADATA\BITeam]
 GO
@@ -33,4 +33,13 @@ GO
 CREATE USER [tmurphy4] FOR LOGIN [tmurphy4]
 GO
 ALTER ROLE [db_datareader] ADD MEMBER [tmurphy4]
+GO
+GO
+CREATE USER [afrazie1] FOR LOGIN [afrazie1]
+GO
+ALTER ROLE [db_datareader] ADD MEMBER [afrazie1]
+GO
+CREATE USER [dthomps4] FOR LOGIN [dthomps4]
+GO
+ALTER ROLE [db_datareader] ADD MEMEBER [dthomps4]
 GO
