@@ -1,0 +1,14 @@
+##http://ilovepowershell.com/2015/09/10/how-to-check-if-a-server-needs-a-reboot/
+
+If ((Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager" -Name "PendingFileRenameOperations" -ErrorAction SilentlyContinue) -Or (Get-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired" -ErrorAction SilentlyContinue) -Or (Get-ChildItem -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Component Based Servicing\RebootPending" -ErrorAction SilentlyContinue))
+{    
+	 write-host "Message: Reboot required."
+	 write-host "Statistic: 1"
+	 exit 0
+ }
+else
+ {
+	 write-host "Message: Reboot not required."
+	 write-host "Statistic: 0"
+	 exit 0
+ }

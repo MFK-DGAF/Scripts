@@ -19,3 +19,12 @@ GO
 ALTER ROLE [db_datareader] ADD MEMBER [rmanager]
 GO
 GRANT EXECUTE TO [rmanager]
+GO
+CREATE USER [afrazie1] FOR LOGIN [afrazie1]
+GO
+ALTER ROLE [db_datareader] ADD MEMBER [afrazie1]
+GO
+CREATE USER [dthomps4] FOR LOGIN [dthomps4]
+GO
+ALTER ROLE [db_datareader] ADD MEMBER [dthomps4]
+GO
