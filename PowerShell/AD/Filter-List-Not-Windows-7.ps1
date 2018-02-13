@@ -1,0 +1,1 @@
+get-adcomputer -filter 'OperatingSystemVersion -notlike "6.1*"' -properties OperatingSystemVersion, OperatingSystem | FL Name, OperatingSystem
