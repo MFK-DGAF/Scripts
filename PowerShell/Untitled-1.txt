@@ -1,0 +1,1 @@
+if ((Invoke-WmiMethod -ComputerName localhost -Namespace "ROOT\ccm\ClientSDK" -Class CCM_ClientUtilities -Name DetermineIfRebootPending  | select-object -ExpandProperty "RebootPending") -eq $true) {Write-Host "Message:Reboot Pending"; Write-Host "Statistic:1"} else {Write-Host "Message:No Reboot Pending"; Write-Host "Statistic:0"}
